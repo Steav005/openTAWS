@@ -30,9 +30,6 @@ pub use types::*;
 #[cfg(feature = "capi")]
 pub mod capi;
 
-#[cfg(feature = "wasi")]
-pub mod wasi;
-
 // How many alarms at max?
 // How do we prioritize?
 // Alarms Type, which contains all alarms but

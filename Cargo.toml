@@ -19,12 +19,11 @@ github = { repository = "aeronautical-informatics/openTAWS" }
 is-it-maintained-open-issues = { repository = "aeronautical-informatics/openTAWS" }
 maintenance = { status = "actively-developed" }
 
-#[lib]
-#crate-type = ['cdylib']
+[lib]
+crate-type = ['cdylib']
 
 [features]
-default = [ ]
-capi = [ ]
+default = [ "wasi" ]
 wasi = [ "serde", "serde_json", "wasm-bindgen" ]
 
 [dependencies]
